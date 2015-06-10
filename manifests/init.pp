@@ -90,7 +90,7 @@ class cloudwatchlogs (
         owner          => 'root',
         group          => 'root',
         mode           => '0644',
-        ensure_newline => true,
+#        ensure_newline => true,
         warn           => true,
         require        => File['/etc/awslogs'],
       }
