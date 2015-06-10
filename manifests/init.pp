@@ -86,7 +86,7 @@ class cloudwatchlogs (
       }
 
       concat { '/etc/awslogs/awslogs.conf':
-        ensure         => 'present',
+#        ensure         => 'present',
         owner          => 'root',
         group          => 'root',
         mode           => '0644',
